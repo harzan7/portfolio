@@ -5,8 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active" data-page="home">Home</a></li>
+        <li><a href="#" data-page="about">About</a></li>
+        <li><a href="#" data-page="projects">Projects</a></li>
+        <li><a href="#" data-page="contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Showcasing my coding projects and skills</p>
+    </section>
+
+    <section id="about" class="page">
+      <h1>About Me</h1>
+      <p>Information about me will go here</p>
+    </section>
+
+    <section id="projects" class="page">
+      <h1>Projects</h1>
+      <p>My coding projects will be displayed here</p>
+    </section>
+
+    <section id="contact" class="page">
+      <h1>Contact</h1>
+      <p>How to reach me</p>
+    </section>
+  </main>
+  
   <script src="script.js"></script>
 </body>
 </html>
