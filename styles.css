@@ -90,3 +90,19 @@ h1 {
 p {
     margin-bottom: 1rem;
 }
+
+/* Dark theme styles */
+body.dark-theme {
+    --primary-color: #4da6ff;
+    --secondary-color: #3ddc84;
+    --text-color: #f0f0f0;
+    --bg-color: #121212;
+    --nav-bg: #1e1e1e;
+    --card-bg: #2d2d2d;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth transitions for theme change */
+body, header, .card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
