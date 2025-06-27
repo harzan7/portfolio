@@ -352,3 +352,37 @@ textarea {
         flex-direction: column;
     }
 }
+
+
+/* Footer */
+footer {
+    background-color: var(--nav-bg);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
