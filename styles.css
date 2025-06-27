@@ -102,6 +102,7 @@ body.dark-theme {
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+
 /* Smooth transitions for theme change */
 body, header, .card {
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -136,6 +137,7 @@ body, header, .card {
     margin-bottom: 3rem;
 }
 
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -167,6 +169,7 @@ body, header, .card {
     color: white;
     transform: translateY(-2px);
 }
+
 
 /* About page */
 .about-content {
@@ -223,4 +226,64 @@ h3 {
     .about-image {
         justify-content: flex-start;
     }
+}
+
+
+/* Projects page */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 180px;
+    width: 100%;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin: 0 0 1rem;
+    font-size: 1.3rem;
+}
+
+.card-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.project-link:before {
+    content: "→";
+    margin-right: 0.3rem;
+    transition: margin-right 0.2s ease;
+}
+
+.project-link:hover:before {
+    margin-right: 0.5rem;
 }
