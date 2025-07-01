@@ -10,12 +10,12 @@
 <body>
   <header>
     <nav>
-      <div class="logo">My Portfolio</div>
+      <div class="logo">My Portfolio - Home</div>
       <ul class="nav-links">
-        <li><a href="#" class="active" data-page="home">Home</a></li>
-        <li><a href="#" data-page="about">About</a></li>
-        <li><a href="#" data-page="projects">Projects</a></li>
-        <li><a href="#" data-page="contact">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button id="theme-toggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon"></i>
@@ -24,141 +24,15 @@
   </header>
 
   <main>
-    <section id="home" class="page active">
-      <div class="hero">
-        <h1>Hi, I'm <span class="highlight">Hoja Arzanesh</span></h1>
-        <p class="intro">I build clean, efficient, and user-friendly applications.
-          Here you can find some of my recent projects and learn more about my skills.</p>
-        <div class="cta-buttons">
-          <a href="#projects" class="btn primary" data-page="projects">View Projects</a>
-          <a href="#contact" class="btn secondary" data-page="contact">Contact Me</a>
-        </div>
+    <div class="hero">
+      <h1>Hi, I'm <span class="highlight">Hoja Arzanesh</span></h1>
+      <p class="intro">I build clean, efficient, and user-friendly applications.
+        Here you can find some of my recent projects and learn more about my skills.</p>
+      <div class="cta-buttons">
+        <a href="projects.html" class="btn primary" data-page="projects">View Projects</a>
+        <a href="contact.html" class="btn secondary" data-page="contact">Contact Me</a>
       </div>
-    </section>
-
-    <section id="about" class="page">
-      <h1>About Me</h1>
-      <div class="about-content">
-        <div class="about-text">
-          <p>I'm a passionate developer with experience in building web and mobile applications and
-            solving complex problems with code.</p>
-          <p>My journey in programming began when I started my computer science major at RIT in Summer 2020.
-            Before then, I loved to solve mathematical problems and would constantly find myself questioning
-            the mathematical formulas we would memorize in class (like the quadratic formula) and why it works.
-            I combined this interest in solving problems with my interest in working with computers and decided to major
-            in computer science.</p>
-          <p>When I'm not coding, I enjoy taking strolls in my neighborhood and working out.</p>
-
-          <h3>Skills</h3>
-          <div class="skills">
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Python</span>
-            <span class="skill">Git</span>
-            <!-- Add more skills as needed -->
-          </div>
-        </div>
-        <div class="about-image">
-          <div class="image-placeholder"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="page">
-      <h1>My Projects</h1>
-      <div class="projects-grid">
-        <div class="card">
-          <div class="card-image" style="background-color: #3498db;"></div>
-          <div class="card-content">
-            <h3>Project 1</h3>
-            <p>Description of project 1. What it does, technologies used, and challenges overcome.</p>
-            <div class="card-links">
-              <a href="#" class="project-link">View Demo</a>
-              <a href="#" class="project-link">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image" style="background-color: #2ecc71;"></div>
-          <div class="card-content">
-            <h3>Project 2</h3>
-            <p>Description of project 2. What it does, technologies used, and challenges overcome.</p>
-            <div class="card-links">
-              <a href="#" class="project-link">View Demo</a>
-              <a href="#" class="project-link">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image" style="background-color: #e74c3c;"></div>
-          <div class="card-content">
-            <h3>Project 3</h3>
-            <p>Description of project 3. What it does, technologies used, and challenges overcome.</p>
-            <div class="card-links">
-              <a href="#" class="project-link">View Demo</a>
-              <a href="#" class="project-link">Source Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="page">
-      <h1>Get In Touch</h1>
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>Contact Information</h3>
-          <p>Feel free to reach out to me for collaboration or just to say hi!</p>
-
-          <div class="contact-method">
-            <i class="fas fa-envelope"></i>
-            <span>your.email@exammple.com</span>
-          </div>
-
-          <div class="contact-method">
-            <i class="fas fa-phone"></i>
-            <span>+1 (123) 456-7890</span>
-          </div>
-
-          <div class="contact-method">
-            <i class="fab fa-github"></i>
-            <span>github.com/yourusername</span>
-          </div>
-
-          <div class="contact-method">
-            <i class="fab fa-linkedin"></i>
-            <span>linkedin.com/in/yourprofile</span>
-          </div>
-        </div>
-
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-
-          <button type="submit" class="btn primary">Send Message</button>
-        </form>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer>

@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
+            // e.preventDefault();
 
             // Update active link
             navLinks.forEach(navLink => navLink.classList.remove('active'));
