@@ -367,6 +367,34 @@ textarea {
 }
 
 
+/* Project Details */
+.project-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.project-content {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.project-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-screenshot, .project-gif {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
 /* Footer */
 footer {
     background-color: var(--nav-bg);
