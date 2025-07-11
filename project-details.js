@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize carousels
     carouselItems.screenshots =
         Array.from(document.querySelectorAll('#screenshots-carousel .carousel-item'));
-    carouselItems.demos = Array.from(document.querySelectorAll('#demo-carousel .carousel-item'));
+    carouselItems.demos = Array.from(document.querySelectorAll('#demos-carousel .carousel-item'));
 
     // Close modal when pressing Escape key
     document.addEventListener('keydown', () => {
