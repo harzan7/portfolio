@@ -138,16 +138,8 @@
 
             <div class="project-challenge">
                 <h2>Key Challenges</h2>
-                <p>Implementing the expression solver for the inputted expressions by the user was tricky,
-                    since creating an entire expression solver for the calculator would require a lot of development time,
-                    and I would rather use a public module to handle it.</p>
-                <p>So, instead of creating an entirely new solver and extending the development time of the calculator,
-                    I used a public module called
-                    <a href="https://github.com/mozilla/rhino" target="_blank">Rhino</a>,
-                    which is an open-source implementation of JavaScript written entirely in Java.</p>
-                <p>I used this module to evaluate mathematical expressions as strings, since JavaScript has an eval() function that has the capability of doing so.
-                    Thus, I was able to avoid having to create an entire solver from scratch, and reduce development time by a large margin.</p>
-                <p></p>
+                <p>A key challenge was staying true to the single responsibility principle and not coding the entire project in one file.
+                It was a challenge trying to dissect the project into separate files, so each file would have one single responsibility.</p>
             </div>
         </div>
     </div>
