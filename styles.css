@@ -322,6 +322,69 @@ h3 {
 }
 
 
+/* Experience page */
+.experience-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.experience-item {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-3px);
+}
+
+.experience-content {
+    padding: 2rem;
+}
+
+.experience-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.experience-duration {
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+
+.experience-accommodations {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.experience-accomplishments li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.experience-summary {
+    margin: 1.5rem 0 0;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 1.5rem;
+    }
+
+    .experience-title {
+        font-size: 1.3rem;
+    }
+}
+
+
 /* Contact page */
 .contact-container {
     display: flex;
