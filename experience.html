@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja Arzanesh - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Hoja Arzanesh - Experience</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+</header>
+
+<main>
+    <h1>My Experience</h1>
+    <div class="projects-grid">
+        <div class="card">
+            <div class="card-image">
+                <img src="images/p1_android_calculator/screenshot_android_calculator_dark_mode.png"
+                     alt="Android Calculator App Screenshot">
+            </div>
+            <div class="card-content">
+                <h3>Android Calculator App</h3>
+                <p>A basic calculator for Android devices.</p>
+                <div class="card-links">
+                    <a href="project1-details.html" class="project-link">View Details</a>
+                    <a href="#" class="project-link">Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/p2_ios_calculator/screenshot_ios_calculator.png"
+                     alt="iOS Calculator App Screenshot">
+            </div>
+            <div class="card-content">
+                <h3>iOS Calculator App</h3>
+                <p>A basic calculator for iOS devices.</p>
+                <div class="card-links">
+                    <a href="project2-details.html" class="project-link">View Details</a>
+                    <a href="#" class="project-link">Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/p3_react-movie-search-engine/screenshot_movie-search-engine_home-page.png"
+                     alt="React Movie Search Engine Home Page">
+            </div>
+            <div class="card-content">
+                <h3>React Movie Search Engine App</h3>
+                <p>A basic movie search engine that allows users to search movies and favorite them.</p>
+                <div class="card-links">
+                    <a href="project3-details.html" class="project-link">View Details</a>
+                    <a href="https://github.com/harzan7/movie-search-engine" class="project-link">Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+<!--            <div class="card-image" style="background-color: #e74c3c;"></div>-->
+            <div class="card-image">
+                <img src="images/p4_react_quiz-app/screenshot_quiz-app_start.png" alt="React Quiz App Screenshot">
+            </div>
+            <div class="card-content">
+                <h3>React Quiz App</h3>
+                <p>A basic quiz web app made using the React framework.</p>
+                <div class="card-links">
+                    <a href="project4-details.html" class="project-link">View Details</a>
+                    <a href="https://github.com/harzan7/quiz-app" class="project-link">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; <span id="year"></span> Hoja Arzanesh. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/harzan7" aria-label="Github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hoja-arzanesh/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
