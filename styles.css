@@ -194,10 +194,16 @@ body, header, .card {
 
 
 /* About page */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 .about-content {
     display: flex;
     gap: 3rem;
-    margin-top: 2rem;
 }
 
 .about-text {
@@ -211,12 +217,15 @@ body, header, .card {
     align-items: flex-start;
 }
 
-.image-placeholder {
+.profile-image {
     width: 250px;
-    height: 250px;
     border-radius: 50%;
     background-color: var(--primary-color);
     opacity: 0.7;
+}
+
+.skills-section {
+    width: 100%;
 }
 
 h3 {
@@ -247,6 +256,11 @@ h3 {
 
     .about-image {
         justify-content: flex-start;
+        order: 2;
+    }
+
+    .about-text {
+        order: 1;
     }
 }
 
